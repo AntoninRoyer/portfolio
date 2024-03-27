@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bulma": "^1.0.0",
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "build": "node-sass assets/css/style.scss --output-style compressed -o src/style.css",
+    "watch": "node-sass assets/css/style.scss --output-style compressed -o src/style.css --watch"
+  }
+}
