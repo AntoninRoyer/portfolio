@@ -16,7 +16,7 @@
     <title>Portfolio | Antonin Royer</title>
 </head>
 <body>
-    <div class="container">
+    <div>
     <!-- --------------- HEADER --------------- -->
         <nav id="header">
             <div class="nav-logo">
@@ -64,7 +64,7 @@
                         <p>I'm <span class="typedText"></span></p>
                     </div>
                     <div class="featured-text-info">
-                        <p>Experienced frontend developer with a passion for creating visually stunning and user-friendly websites.
+                        <p>An experienced developer with a passion for creating visually stunning and user-friendly websites.
                         </p>
                     </div>
                     <div class="featured-text-btn">
@@ -146,7 +146,7 @@ I invite you to browse through my portfolio to discover how my technical skills 
                             </div>
                             <div class="skills-list">
                                 <span>MySQL</span>
-                                <span>PostgreSQL</span>
+                                <span>PostgresSQL</span>
                                 <span>SQLite</span>
                             </div>
                         </div>
@@ -161,20 +161,96 @@ I invite you to browse through my portfolio to discover how my technical skills 
                     <h1>Projects</h1>
                 </div>
                 <div class="project-container">
-                    <div class="project-box" id="project">
+                    <div class="project-box" id="project-btn">
                         <i class="uil uil-briefcase-alt"></i>
                         <h3>Completed</h3>
                         <label>15+ Finished Projects</label>
                     </div>
-                    <div class="project-box" id="client">
+                    <div class="project-box" id="client-btn">
                         <i class="uil uil-users-alt"></i>
                         <h3>Clients</h3>
-                        <label>25+ Happy Clients</label>
+                        <label>3+ Happy Clients</label>
                     </div>
-                    <div class="project-box" id="experience">
+                    <div class="project-box" id="experience-btn">
                         <i class="uil uil-award"></i>
                         <h3>Experience</h3>
                         <label>2+ Years in the field</label>
+                    </div>
+                </div>
+            </section>
+                <hr>
+            <section style="display: none;" class="section project-container" id="experience">
+                <div class="columns">
+                    <div class="column">
+                        <div class="box">
+                            <h5>IT Assistant</h5>
+                            <h5>Plug In Digital</h5>
+                            <p>2022 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <h5>Informatic Bachelor</h5>
+                            <h5>OPEN IT</h5>
+                            <p>2021 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <h5>BTS Audiovisual</h5>
+                            <h5>ACFA Multimédia</h5>
+                            <p>2018 - 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="display: none;" class="section project-container" id="client">
+                <div class="columns">
+                    <div class="column">
+                        <div class="box">
+                            <h5>IT Assistant</h5>
+                            <h5>Plug In Digital</h5>
+                            <p>2022 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <h5>Informatic Bachelor</h5>
+                            <h5>OPEN IT</h5>
+                            <p>2021 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <h5>BTS Audiovisual Sound professions option</h5>
+                            <h5>ACFA Multimédia</h5>
+                            <p>2018 - 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="display: none;" class="section project-container" id="project">
+                <div class="columns">
+                    <div class="column">
+                        <div class="box">
+                            <h5>IT Assistant</h5>
+                            <h5>Plug In Digital</h5>
+                            <p>2022 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <h5>Informatic Bachelor</h5>
+                            <h5>OPEN IT</h5>
+                            <p>2021 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <h5>BTS Audiovisual Sound professions option</h5>
+                            <h5>ACFA Multimédia</h5>
+                            <p>2018 - 2020</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -197,11 +273,17 @@ I invite you to browse through my portfolio to discover how my technical skills 
                     <div class="col">
                         <div class="form-control">
                             <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Name">
-                                <input type="text" class="input-field" placeholder="Email">
+                                <label>
+                                    <input type="text" class="input-field" placeholder="Name">
+                                </label>
+                                <label>
+                                    <input type="text" class="input-field" placeholder="Email">
+                                </label>
                             </div>
                             <div class="text-area">
-                                <textarea placeholder="Message"></textarea>
+                                <label>
+                                    <textarea placeholder="Message"></textarea>
+                                </label>
                             </div>
                             <div class="form-button">
                                 <button class="btn">Send <i class="uil uil-message"></i></button>
@@ -244,7 +326,6 @@ I invite you to browse through my portfolio to discover how my technical skills 
                 <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Antonin Royer</a> - All rights reserved</p>
             </div>
         </footer>
-
     </div>
 
 
@@ -258,5 +339,6 @@ I invite you to browse through my portfolio to discover how my technical skills 
 
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
 </body>
 </html>

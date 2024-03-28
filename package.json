@@ -1,10 +1,11 @@
 {
   "dependencies": {
     "bulma": "^1.0.0",
+    "bulma-carousel": "^4.0.24",
     "node-sass": "^9.0.0"
   },
   "scripts": {
-    "build": "node-sass assets/css/style.scss --output-style compressed -o src/style.css",
-    "watch": "node-sass assets/css/style.scss --output-style compressed -o src/style.css --watch"
+    "build": "node-sass assets/css/style.scss --output-style compressed -o src/",
+    "watch": "node-sass assets/css/style.scss --output-style compressed -o src/ --watch"
   }
 }
