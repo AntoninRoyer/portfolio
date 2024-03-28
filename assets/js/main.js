@@ -11,17 +11,17 @@ class Project{
     static getProjects(){
         return [
             new Project(0, 'Portfolio', "Création de mon portfolio pour présenter mes compétences et mes projets", '#'),
-            new Project(1, 'Alba Massage', "Création d'un site web pour mettre en avant une entreprise de massage et bien-être", 'https://alba-massage.shpirt.fr/fr/'),
+            new Project(1, 'Alba Massage', "Site web pour mettre en avant une entreprise de massage et bien-être à domicile", 'https://alba-massage.shpirt.fr/fr/'),
             new Project(2, 'Setify', "Plateforme d'analyse de playlists spotify pour les DJ, pour permettre de faire des setlists cohérents.", 'https://setify.fr/'),
-            new Project(3, 'Shpirt', "Site web pour présenter mon projet musical : Shpirt un artiste électro", 'https://shpirt.fr/'),
-            new Project(4, 'Chess Game', "C'est un jeu d'échec que j'ai codé en html/css/js.", 'https://github.com/AntoninRoyer/Chess'),
+            new Project(3, 'Shpirt', "Site web pour présenter mon projet musical : Shpirt un artiste venu du net", 'https://shpirt.fr/'),
+            new Project(4, 'Chess Game', "C'est un jeu d'échec que j'ai codé en html/css/js comme projet d'étude", 'https://github.com/AntoninRoyer/Chess'),
             new Project(5, 'Les Rochers de Maguelone', "Un site web réalisé pour un accro-branche à villeneuve-les-magelone", 'https://www.les-rochers-de-maguelone.com/'),
-            new Project(6, 'Wifi Cracker', 'Description of Project 6', '#'),
-            new Project(7, "Wiki d'entreprise", 'Description of Project 7', 'https://wiki.plugindigital.com/'),
-            new Project(8, 'GLPI', 'Description of Project 8', 'https://glpi.plugindigital.com/'),
-            new Project(9, 'Services', 'Description of Project 9', 'https://www.google.com'),
-            new Project(10, 'Playlist Downloader', 'Description of Project 10', 'https://www.google.com'),
-            new Project(11, 'Ansible Peertube', 'Description of Project 11', 'https://github.com/AntoninRoyer/ansible-peertube'),
+            new Project(6, 'Wifi Cracker', "Projet d'étude pour récupérer le mot de passe wifi d'un réseau (but éducatif)", '#'),
+            new Project(7, "Outline", "Wiki d'entreprise mis en place avec Outline un notion like open source", 'https://wiki.plugindigital.com/'),
+            new Project(8, 'GLPI', "Outil de gestion de parc informatique pour l'entreprise Plug In Digital", 'https://glpi.plugindigital.com/'),
+            new Project(9, 'Back Office', 'Outil de back office de Plug In Digital pour réaliser un objectif métier', 'https://bo.plugin.digital/Portal/Home/index'),
+            new Project(10, 'Playlist Downloader', 'Outil de téléchargement de playlist spotify pour avoir une copie de ses meilleures playlists', 'https://github.com/AntoninRoyer/spotify-downloader'),
+            new Project(11, 'Ansible Peertube', "Automatisation de l'installation d'un serveur peertube avec ansible", 'https://github.com/AntoninRoyer/ansible-peertube'),
         ];
     }
 
