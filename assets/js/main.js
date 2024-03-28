@@ -11,12 +11,18 @@ class Project{
     // simulation of a database
     static getProjects(){
         return [
-            new Project(1, 'Alba Massage', 'Description of Project 1', 'assets/images/project1.jpg', 'https://www.google.com'),
-            new Project(2, 'Setify.fr', 'Description of Project 2', 'assets/images/project2.jpg', 'https://www.google.com'),
-            new Project(3, 'Shpirt.fr', 'Description of Project 3', 'assets/images/project3.jpg', 'https://www.google.com'),
-            new Project(4, 'Chess Game', 'Description of Project 4', 'assets/images/project4.jpg', 'https://www.google.com'),
-            new Project(5, 'Les Rochers de Maguelone', 'Description of Project 5', 'assets/images/project5.jpg', 'https://www.google.com'),
-            new Project(6, 'Wifi Cracker', 'Description of Project 6', 'assets/images/project6.jpg', 'https://www.google.com'),
+            new Project(0, 'Portfolio', "Création de mon portfolio pour présenter mes compétences et mes projets", 'assets/images/projects/sample.png', '#'),
+            new Project(1, 'Alba Massage', "Création d'un site web pour mettre en avant une entreprise de massage et bien-être", 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(2, 'Setify.fr', "Plateforme d'analyse de playlists spotify pour les DJ, pour permettre de faire des setlists cohérents.", 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(3, 'Shpirt.fr', "Site web pour présenter mon projet musical : Shpirt un artiste électro", 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(4, 'Chess Game', "C'est un jeu d'échec que j'ai codé en html/css/js.", 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(5, 'Les Rochers de Maguelone', "Un site web réalisé pour un accro-branche à villeneuve-les-magelones", 'assets/images/projects/5.png', 'https://www.google.com'),
+            new Project(6, 'Wifi Cracker', 'Description of Project 6', 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(7, "Wiki d'entreprise", 'Description of Project 7', 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(8, 'GLPI', 'Description of Project 8', 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(9, 'Services', 'Description of Project 9', 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(10, 'Playlist Downloader', 'Description of Project 10', 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(11, 'Portfolio', 'Description of Project 11', 'assets/images/projects/sample.png', 'https://www.google.com'),
         ];
     }
 
