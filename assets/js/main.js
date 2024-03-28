@@ -1,28 +1,27 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
 class Project{
-    constructor(id, title, description, image, link){
+    constructor(id, title, description, link){
         this.id = id;
         this.title = title;
         this.description = description;
-        this.image = image;
         this.link = link;
     }
 
     // simulation of a database
     static getProjects(){
         return [
-            new Project(0, 'Portfolio', "Création de mon portfolio pour présenter mes compétences et mes projets", 'assets/images/projects/sample.png', '#'),
-            new Project(1, 'Alba Massage', "Création d'un site web pour mettre en avant une entreprise de massage et bien-être", 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(2, 'Setify.fr', "Plateforme d'analyse de playlists spotify pour les DJ, pour permettre de faire des setlists cohérents.", 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(3, 'Shpirt.fr', "Site web pour présenter mon projet musical : Shpirt un artiste électro", 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(4, 'Chess Game', "C'est un jeu d'échec que j'ai codé en html/css/js.", 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(5, 'Les Rochers de Maguelone', "Un site web réalisé pour un accro-branche à villeneuve-les-magelones", 'assets/images/projects/5.png', 'https://www.google.com'),
-            new Project(6, 'Wifi Cracker', 'Description of Project 6', 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(7, "Wiki d'entreprise", 'Description of Project 7', 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(8, 'GLPI', 'Description of Project 8', 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(9, 'Services', 'Description of Project 9', 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(10, 'Playlist Downloader', 'Description of Project 10', 'assets/images/projects/sample.png', 'https://www.google.com'),
-            new Project(11, 'Portfolio', 'Description of Project 11', 'assets/images/projects/sample.png', 'https://www.google.com'),
+            new Project(0, 'Portfolio', "Création de mon portfolio pour présenter mes compétences et mes projets", '#'),
+            new Project(1, 'Alba Massage', "Création d'un site web pour mettre en avant une entreprise de massage et bien-être", 'https://alba-massage.shpirt.fr/fr/'),
+            new Project(2, 'Setify', "Plateforme d'analyse de playlists spotify pour les DJ, pour permettre de faire des setlists cohérents.", 'https://setify.fr/'),
+            new Project(3, 'Shpirt', "Site web pour présenter mon projet musical : Shpirt un artiste électro", 'https://shpirt.fr/'),
+            new Project(4, 'Chess Game', "C'est un jeu d'échec que j'ai codé en html/css/js.", 'https://github.com/AntoninRoyer/Chess'),
+            new Project(5, 'Les Rochers de Maguelone', "Un site web réalisé pour un accro-branche à villeneuve-les-magelone", 'https://www.les-rochers-de-maguelone.com/'),
+            new Project(6, 'Wifi Cracker', 'Description of Project 6', '#'),
+            new Project(7, "Wiki d'entreprise", 'Description of Project 7', 'https://wiki.plugindigital.com/'),
+            new Project(8, 'GLPI', 'Description of Project 8', 'https://glpi.plugindigital.com/'),
+            new Project(9, 'Services', 'Description of Project 9', 'https://www.google.com'),
+            new Project(10, 'Playlist Downloader', 'Description of Project 10', 'https://www.google.com'),
+            new Project(11, 'Ansible Peertube', 'Description of Project 11', 'https://github.com/AntoninRoyer/ansible-peertube'),
         ];
     }
 
@@ -48,8 +47,8 @@ projectsData.forEach(project => {
     // Contenu du projet à insérer dans la colonne
     // Ajout du contenu du projet à la colonne
     projectColumn.innerHTML = `
-        <div class="box">
-            <img src="${project.image}" alt="${project.title}">
+        <div class="box" id="project-${project.id}">
+            <img src="/assets/images/projects/${project.id}.png" alt="${project.title}">
             <div class="project-info">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
