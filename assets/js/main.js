@@ -1,4 +1,60 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
+class Project{
+    constructor(id, title, description, image, link){
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.image = image;
+        this.link = link;
+    }
+
+    // simulation of a database
+    static getProjects(){
+        return [
+            new Project(1, 'Alba Massage', 'Description of Project 1', 'assets/images/project1.jpg', 'https://www.google.com'),
+            new Project(2, 'Setify.fr', 'Description of Project 2', 'assets/images/project2.jpg', 'https://www.google.com'),
+            new Project(3, 'Shpirt.fr', 'Description of Project 3', 'assets/images/project3.jpg', 'https://www.google.com'),
+            new Project(4, 'Chess Game', 'Description of Project 4', 'assets/images/project4.jpg', 'https://www.google.com'),
+            new Project(5, 'Les Rochers de Maguelone', 'Description of Project 5', 'assets/images/project5.jpg', 'https://www.google.com'),
+            new Project(6, 'Wifi Cracker', 'Description of Project 6', 'assets/images/project6.jpg', 'https://www.google.com'),
+        ];
+    }
+
+    getProject(id){
+        return Project.getProjects().find(project => project.id === id);
+    }
+}
+// insert projects into the DOM
+const projectsData = Project.getProjects();
+const projectContainer = document.querySelector('#project');
+// Supposons que projectContainer soit votre conteneur où vous souhaitez afficher vos projets.
+// Assurez-vous d'avoir un conteneur parent avec la classe "columns" pour utiliser Bulma Grid.
+
+// Nettoyage du contenu existant dans projectContainer
+projectContainer.innerHTML = '';
+
+// Boucle sur les données des projets
+projectsData.forEach(project => {
+    // Création d'une colonne Bulma pour chaque projet
+    const projectColumn = document.createElement('div');
+    projectColumn.classList.add('column'); // Utilisation de Bulma pour définir la largeur de la colonne
+
+    // Contenu du projet à insérer dans la colonne
+    // Ajout du contenu du projet à la colonne
+    projectColumn.innerHTML = `
+        <div class="box">
+            <img src="${project.image}" alt="${project.title}">
+            <div class="project-info">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <a href="${project.link}" target="_blank" class="project-btn">View Project</a>
+            </div>
+        </div>
+    `;
+
+    // Ajout de la colonne au conteneur parent
+    projectContainer.appendChild(projectColumn);
+});
 function myMenuFunction(){
     var menuBtn = document.getElementById("myNavMenu");
 
@@ -127,7 +183,7 @@ const projectsBtn = document.querySelector('#project-btn');
 // reveal project section on click
 projectsBtn.addEventListener('click', () => {
     if (projects.style.display === 'none') {
-        projects.style.display = 'block';
+        projects.style.display = 'flex';
     }
     else {
         projects.style.display = 'none';
@@ -146,3 +202,5 @@ clientsBtn.addEventListener('click', () => {
         clients.style.display = 'none';
     }
 });
+
+
